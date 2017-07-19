@@ -9,6 +9,7 @@ public class Cliente {
     private String nombreCliente;
     private String nit;
 
+	/*repositorio banco2*/
 	
 	public Cliente() {
     }
