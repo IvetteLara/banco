@@ -33,5 +33,30 @@ public class Cliente {
         this.nit = nit;
     }
     
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 17 * hash + this.idCliente;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Cliente other = (Cliente) obj;
+        if (this.idCliente != other.idCliente) {
+            return false;
+        }
+        return true;
+    }
     
 }
