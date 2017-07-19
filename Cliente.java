@@ -9,6 +9,17 @@ public class Cliente {
     private String nombreCliente;
     private String nit;
 
+	
+	public Cliente() {
+    }
+
+    public Cliente(int idCliente, String nombreCliente, String nit) {
+        this.idCliente = idCliente;
+        this.nombreCliente = nombreCliente;
+        this.nit = nit;
+    }
+       
+	
     public int getIdCliente() {
         return idCliente;
     }
